@@ -95,21 +95,20 @@
     <header>
         <div class="header-content">
             <!-- Add your profile picture here -->
-            <img src="1660379708794.jpg" alt="Your Profile Picture" class="profile-picture">
+            <img src="D:\tamil\two__face__2-20220115-0001.jpg" alt="Your Profile Picture" class="profile-picture">
             <h1>Tamizharasan V</h1>
             <h2>BCA</h2>
         </div>
     </header>
-
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
+            <li><a href="#education">Educations</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a> </li>
             <li><a href="#resume">Resume</a></li>
         </ul>
     </nav>
-
     <section id="about">
         <div class="section-content">
             <h2>About Me</h2>
@@ -120,8 +119,9 @@
     </section>
     <section id="education">
         <div class="section-content">
-            <h2>Education</h2>
-            <p>Annamalai University - BACHELOR OF COMPUTER APPLICATIONS </p>
+            <h2>Educations</h2>
+            <p>BCA in Tirukkoilur college of acts and science</p>
+            <P>+2 in Kabilar Goverment Boys Higher Secondary School</P>
         </div>
     </section>
     <section id="skills">
@@ -138,12 +138,18 @@
             </ul>
         </div>
     </section>
+    <section id="certifications">
+        <div class="section-content">
+            <h2>Certifications</h2>
+            <li>IBM Cloud Computing</li>
+        </div>
+    </section>
     <section id="resume">
         <div class="section-content">
             <center>
                 <h2>Resume</h2>
             <a href="/tamil/Resume.pdf" target="_blank" class="download-button">Download CV</a>
-        </center>
+         </center>
         </div>
     </section>
     <footer>
@@ -154,10 +160,8 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-
                 const targetId = this.getAttribute('href').substring(1);
                 const targetElement = document.getElementById(targetId);
-
                 if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop,
